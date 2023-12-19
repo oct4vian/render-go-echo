@@ -14,6 +14,8 @@ func main() {
 	if !present {
 		fmt.Println("PORT is not defined. Defaulting to :1323")
 		val = ":1323"
+	} else {
+		val = ":" + val
 	}
 
 	e := echo.New()
